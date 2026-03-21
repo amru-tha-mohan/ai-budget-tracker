@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    
+    <h1>AI Budget Tracker</h1>
+    <p>Track expenses • Visualize spending • Get smart advice</p>
+
+    <form action="/calculate" method="POST">
+        <label>Monthly Salary:</label>
+        <input type="number" name="salary" required><br><br>
+
+        <label>Food Expense:</label>
+        <input type="number" name="food" required><br><br>
+
+        <label>Rent Expense:</label>
+        <input type="number" name="rent" required><br><br>
+
+        <label>Travel Expense:</label>
+        <input type="number" name="travel" required><br><br>
+
+        <button type="submit">Calculate Budget</button>
+    </form>
+
+    <br><br>
+    <a href="/">⬅ Back to Home</a>
+</body>
+</html>
